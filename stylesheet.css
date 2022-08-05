@@ -1,0 +1,274 @@
+*,*:before,*:after{
+    margin:0;
+    padding:0;
+}
+body{
+    background:white;
+    padding:0px;
+    position:relative;
+}
+#wrapper{
+    position:relative;
+    border:2px solid blue;
+    margin:10px;
+    background:purple;
+}
+#wrapper .menu_bar .fa-solid{
+    padding-right:10px;
+    
+}
+.menu_bar{
+    text-align: right;
+    padding:5px;
+}
+.menu_bar a{
+    text-decoration: none;
+    margin:5px;
+    border-right: 3px solid blue;
+    padding:5px;
+    color:white;
+    font-weight: bolder;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+.menu_bar  .active{
+    color:yellow;
+}
+.menu_bar a:hover{
+    color:gold;
+    
+}
+.menu_bar a:last-child{
+    border-right:none;
+}
+.body{
+    background: radial-gradient(blueviolet, black);
+    display: grid;
+    grid-template-columns: repeat(3, 30% 50% 60%);
+    margin:20px;    
+    border: 2px solid blue;
+}
+.body{
+    margin-bottom: 50px;
+    padding-left:15px;
+    border-radius: 20px;
+}
+.circle{
+    border:50px groove red;
+    position:absolute;
+    padding:200px;
+    border-radius:100%;
+    margin-top:60px;
+    background:radial-gradient(blueviolet, turquoise)
+}
+.circle{
+    
+    animation:rotate 10s linear forwards infinite;
+    
+}
+@keyframes rotate{
+    0%{
+        border: rgb(52, 2, 99) 50px groove;
+        background:radial-gradient(violet, blueviolet)
+    }
+    50%{
+        border:indigo 50px groove;
+        background:radial-gradient(indigo, blueviolet)
+    }
+    100%{
+        border:purple 50px groove;
+        background:radial-gradient(blueviolet, purple)
+    }
+}
+.profile111{
+    position:relative;
+}
+
+.body .about_me{
+    margin:50px auto;
+    padding:20px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.body .about_me{
+    border:2px solid blue;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.body .about_me h3{
+    text-align: center;
+    margin-bottom: 20px;
+    background: purple;
+    color:white;
+    padding:5px;
+}
+
+
+
+
+.img2{
+    margin-left:90px;
+    margin-top:200px;
+    width:110%
+}
+#cryptosolo{
+    width:13%;  
+    animation:cryptoa 3s ease forwards infinite;
+}
+#crypto1{
+    margin-left: -150px;
+    width:50px;
+    height:50px;    
+    padding-bottom: 20px;
+    animation:cryptoa 1.5s ease forwards infinite;
+
+}
+#crypto2{
+    margin-left: 30px;
+    width:50px;
+    height:50px;    
+    padding-bottom: 30px;
+    animation:cryptoa 1s ease forwards infinite;
+
+}
+#crypto3{
+    margin-left: -15px;
+    width:50px;
+    height:50px;    
+    padding-bottom: 100px;
+    animation:cryptoa 2s ease forwards infinite;
+
+}
+#crypto4{
+    margin-left: -120px;
+    width:50px;
+    height:50px;    
+    padding-bottom: 50px;
+    animation:cryptoa 1.4s ease forwards infinite;
+
+}
+#crypto5{
+    margin-left: -80px;
+    width:50px;
+    height:50px;    
+    padding-bottom: 0px;
+    animation:cryptoa 1.3s ease forwards infinite;
+
+}
+#crypto6{
+    margin-left: 20px;
+    width:30px;
+    height:30px;    
+    padding-bottom: 210px;
+    animation:cryptoa .9s ease forwards infinite;
+    
+
+}
+.profile3{
+    width:250px;
+    height:250px;  
+    
+}
+@keyframes cryptoa{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    750%{
+        transform: translateY(-10px);
+    }
+    100%{
+         
+        transform: translateY(0px);
+    }
+}
+
+
+/*************************** MEDIA QUERRY SECTION *********************/
+@media screen and (max-width:1200px){
+    #wrapper{
+        position:relative;
+        border:2px solid blue;
+        margin:5px;
+        background:purple;
+    }
+    #wrapper .menu_bar .fa-solid{
+        padding-right:5px;
+        
+    }
+    .menu_bar{
+        text-align: center;
+        padding:5px;
+    }  
+    .body{
+        background: radial-gradient(blueviolet, black);
+        display:block;
+        /* grid-template-columns: repeat(3, 30% 50% 60%); */
+        margin:20px;    
+        border: 2px solid blue;
+    }
+    .body{        
+        padding-left:15px;
+        border-radius: 20px;
+    }
+    .circle{
+        border:50px groove red;
+        position:absolute;
+        padding:150px;
+        border-radius:100%;
+        margin-top:60px;
+        background:radial-gradient(blueviolet, turquoise)
+    }
+ 
+    .profile111{
+        position:relative;
+        width: 50%;
+    }
+    
+    .body .about_me{
+        position:relative;
+        width:50%;
+        margin-top:-60%;        
+        /* margin:50px auto; */
+        padding:10px;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    .body .about_me{
+        border:2px solid blue;
+        margin-left: 290px;
+        border-radius: 20px;
+    }
+    .body .about_me h3{
+        text-align: center;
+        margin-bottom: 20px;
+        background: purple;
+        color:white;
+        padding:5px;
+    }
+    
+    
+    
+    
+    .img2{
+        margin-left:40%;
+        margin-top:0;        
+        width:110%
+    }
+   
+}
+

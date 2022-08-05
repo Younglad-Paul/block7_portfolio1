@@ -1,0 +1,185 @@
+*,*:before,*:after{
+    padding:0;
+    margin:0;
+}
+body{
+    padding:30px;
+    background:white;
+}
+.wrapper{
+    background:purple;
+    padding:20px;
+}
+
+#wrapper .menu_bar .fa-solid{
+    padding-right:10px;
+    
+}
+.menu_bar{
+    text-align: right;
+    padding:5px;
+}
+.menu_bar a{
+    text-decoration: none;
+    margin:5px;
+    border-right: 3px solid blue;
+    padding:5px;
+    color:white;
+    font-weight: bolder;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+.menu_bar  .active{
+    color:yellow;
+}
+.menu_bar a:hover{
+    color:gold;
+    
+}
+.menu_bar a:last-child{
+    border-right:none;
+}
+.wrapper2{
+    display:grid;
+    grid-template-columns: repeat(2, 70%, 100%);
+    background: radial-gradient(blueviolet, black);
+}
+.wrapper2 h1{
+    background:purple;
+    width:24%;
+    color:white;
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:-30px;
+    padding-left:20px;
+}
+.images{
+    width:2px;
+    height:5%;
+    padding:20%;
+    
+    animation:slide 30s linear forwards infinite;
+    background-repeat:no-repeat, no-repeat;
+    border-radius: 50px;
+    grid-column: 1/2;
+    background-size: 70%;
+    margin-top:50px;
+    margin-left: 50px;
+
+
+}
+@keyframes slide{
+    0%{
+        background-image: url(images/images1/models/IMG-20220726-WA0029.jpg);
+        
+    }
+    20%{
+        background-image: url(images/images1/models/IMG-20220726-WA0033.jpg);
+        
+    }
+    30%{
+        background-image: url(images/images1/models/IMG-20220726-WA0034.jpg);
+    }
+
+    50%{
+        background-image: url(images/images1/models/IMG-20220726-WA0035.jpg);
+    }
+    75%{
+        background-image: url(images/images1/models/IMG-20220726-WA0036.jpg);
+    }
+    100%{
+        background-image: url(images/images1/models/IMG_2709.JPG);
+    }
+    
+}
+
+.goals{
+    position:absolute;
+    
+    border:10px groove;
+    border-image: url(images/website\ 3.jpg) 25% 25%;
+    background: white;
+    padding:20px;
+    width:50%;
+    height:50%;
+    /* margin-bottom: 70%;*/
+    margin-top:100px; 
+    margin-left:40%;
+    font-size: 30px;
+    /* grid-column: 2/3; */
+    
+}
+.goals h5{
+    text-align: center;
+    background: red;
+    padding:5px;
+    color:white;
+    margin-bottom:20px;
+} 
+
+
+/*************************** MEDIA QUERRY SECTION *********************/
+@media screen and (max-width:2000px){
+    body{
+        padding:2px;
+    }
+    .wrapper{
+        background:purple;
+        padding:5px;
+    }
+    
+    
+    .menu_bar{
+        text-align:center;
+        padding:5px;
+    }    
+    .wrapper2{
+        display:grid;
+        grid-template-columns: repeat(2, 70%, 100%);
+        background: radial-gradient(blueviolet, black);
+    }
+    .wrapper2 h1{
+        background:purple;
+        width:24%;
+        color:white;
+        margin-left:70px;
+        margin-top:20px;
+        margin-bottom:-30px;
+        padding-left:20px;
+        text-align: center;
+    }
+    .images{
+        width:2px;
+        height:5%;
+        padding:30%;
+        
+        animation:slide 30s linear forwards infinite;
+        background-repeat:no-repeat, no-repeat;
+        border-radius: 50px;
+        grid-column: 1/2;
+        background-size: 70%;
+        margin-top:50px;
+        margin-left: 10px;
+    
+    
+    }
+    
+    
+    .goals{
+        position:absolute;
+        
+        border:10px groove;
+        border-image: url(images/website\ 3.jpg) 25% 25%;
+        background: white;
+        padding:10px;
+        width:50%;
+        height:50%;
+        /* margin-bottom: 70%;*/
+        margin-top:100px; 
+        margin-left:40%;
+        font-size: 20px;
+        /* grid-column: 2/3; */
+        
+    }
+       
+}
